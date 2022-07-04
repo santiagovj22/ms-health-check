@@ -11,6 +11,21 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "incremental": true,
-    "skipLibCheck": true
-  }
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "paths": {
+      "adapter/*": ["src/adapter/*"],
+      "domain/*": ["src/domain/*"],
+      "infrastructure/*": ["src/infrastructure/*"],
+      "usecase/*": ["src/usecase/*"],
+      "test/*": ["test/*"],
+    },
+  },
+  "include": ["./**/*.ts", "swagger.builder.ts"],
+  "exclude": ["node_modules", "dist"]
 }
