@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "extra_config": {},
+    "timeout": "3000ms",
+    "cache_ttl": "300s",
+    "host": [
+      "http://localhost:3000"
+    ],
+    "output_encoding": "json",
+    "name": "ms-health-checker",
+    "endpoints": [
+      {
+        "endpoint": "/health",
+        "method": "GET",
+        "output_encoding": "json",
+        "extra_config": {}
+      }
+    ]
+  }
